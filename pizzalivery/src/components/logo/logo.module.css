@@ -1,0 +1,15 @@
+.logoDiv {
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.logoIcon {
+  transform: rotate(-40deg);
+}
+
+.logoText {
+  font-size: var(--large);
+  font-weight: bold;
+  color: var(--common-light);
+}
