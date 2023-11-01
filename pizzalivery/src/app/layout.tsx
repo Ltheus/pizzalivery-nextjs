@@ -8,7 +8,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Pizzalivery",
+  title: "Pizzalivery em nextjs",
 };
 
 export default function RootLayout({
