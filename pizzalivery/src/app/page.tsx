@@ -6,7 +6,7 @@ export default function Home() {
     <main>
       <div>
         <h1>Pizzalivery</h1>
-        <p>Iniciar pedido</p>
+        <p>Iniciar Pedido</p>
       </div>
     </main>
   )

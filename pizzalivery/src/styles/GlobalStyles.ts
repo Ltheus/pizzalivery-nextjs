@@ -1,4 +1,7 @@
-html, body, main, article, nav, aside, section,
+import { createGlobalStyle } from "styled-components"
+
+export const GlobalStyles = createGlobalStyle`
+    html, body, main, article, nav, aside, section,
   header, footer, address, div,
   h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, dl, dt, dd,
   hr, pre, figure, figcaption,
@@ -134,3 +137,4 @@ html, body, main, article, nav, aside, section,
     margin-left: 24px;
     list-style-type: '-'
   }
+`
