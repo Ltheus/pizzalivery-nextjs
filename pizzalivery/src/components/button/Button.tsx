@@ -4,11 +4,12 @@ import styled from "./button.module.css";
 
 interface ButtonProps {
   children: React.ReactNode;
+  onClick: React.ReactEventHandler;
 }
 
-export const Button = ({ children, ...rest }: ButtonProps) => {
+export const Button = ({ children, onClick, ...rest }: ButtonProps) => {
   return (
-    <button className={styled.button} {...rest}>
+    <button className={styled.button} onClick={onClick} {...rest}>
       {children}
     </button>
   );
