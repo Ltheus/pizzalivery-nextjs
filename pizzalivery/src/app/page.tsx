@@ -4,6 +4,7 @@ import { Logo } from '@/components/logo/Logo'
 import { Footer } from '@/components/footer/Footer'
 import { Button } from '@/components/button/Button'
 import { Header } from '@/components/header/Header'
+import { Title } from '@/components/title/Title'
 
 export default function Home() {
   return (
