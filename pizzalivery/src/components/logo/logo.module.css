@@ -8,7 +8,7 @@
 }
 
 .logoText {
-  font-size: var(--large);
+  font-size: 32px;
   font-weight: bold;
   color: var(--common-light);
 }

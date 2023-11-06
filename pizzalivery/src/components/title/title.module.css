@@ -1,6 +1,6 @@
 .heading1 {
-    padding-top: var(--main);
-  font-size: var(--xlarge);
+    padding-top: 24px;
+  font-size: 40px;
   font-weight: 300;
   color: var(--text-dark);
 }

@@ -1,13 +1,13 @@
 .button {
   border: 0;
-  padding-top: var(--small);
-  padding-right: var(--main);
-  padding-bottom: var(--small);
-  padding-left: var(--main);
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
   line-height: 1.1;
   border-width: 2px;
   border-style: solid;
-  font-size: var(--xsmall);
+  font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
