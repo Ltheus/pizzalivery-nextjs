@@ -6,11 +6,11 @@ import { Button } from '@/components/button/Button'
 import { Header } from '@/components/header/Header'
 import { Title } from '@/components/title/Title'
 
+// ---------------------- Home Page ----------------------
+
 export default function Home() {
   return (
     <main>
-      <Header></Header>
-      <Footer></Footer>
     </main>
   )
 }
