@@ -91,7 +91,7 @@ export default function Flavours() {
   useEffect(() => {
     if (!pizzaFlavour) return;
 
-    setflavourId(pizzaFlavour[0].id);
+    setflavourId(pizzaFlavour[0]?.id);
   }, []);
 
   return (
@@ -112,7 +112,7 @@ export default function Flavours() {
             <p className={styled.flavourCardTitle}>{name}</p>
             <p className={styled.flavourCardDescription}>{description}</p>
             <p className={styled.flavourCardPrice}>
-              {convertToCurrency(price[pizzaSize.slices])}
+              {convertToCurrency(price[pizzaSize[0]?.slices])}
             </p>
             <Button id={id} onClick={handleClick}>
               Selecionar

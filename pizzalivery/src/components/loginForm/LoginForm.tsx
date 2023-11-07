@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+"use client"
+
+import { useState } from 'react';
+import { Button } from '../button/Button';
 
 const LoginForm = () => {
   const [username, setUsername] = useState('');
@@ -20,7 +23,7 @@ const LoginForm = () => {
           <label>Senha:</label>
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
         </div>
-        <button onClick={handleLogin}>Entrar</button>
+        <Button onClick={handleLogin}> Entrar </Button>
       </form>
     </div>
   );
