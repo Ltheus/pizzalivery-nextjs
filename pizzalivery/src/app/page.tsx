@@ -9,7 +9,7 @@ import { Button } from '@/components/button/Button'
 export default function Home() {
   const router = useRouter()
   const handleStartOrder = () => {
-    router.push('./sizes')
+    router.push('/sizes')
   }
 
   return (
