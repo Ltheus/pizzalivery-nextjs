@@ -1,13 +1,20 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client"
+
+import { useRouter } from 'next/navigation'
+import styled from './page.module.css'
+import { Button } from '@/components/button/Button'
+
+// ---------------------- Home Page ----------------------
 
 export default function Home() {
+  const router = useRouter()
+  const handleStartOrder = () => {
+    router.push('/sizes')
+  }
+
   return (
-    <main>
-      <div>
-        <h1>Pizzalivery</h1>
-        <p>Iniciar pedido</p>
-      </div>
-    </main>
-  )
+    <div className={styled.homeWrapper}>
+      <Button onClick={handleStartOrder}> Iniciar Pedido </Button>
+    </div>
+  );
 }
