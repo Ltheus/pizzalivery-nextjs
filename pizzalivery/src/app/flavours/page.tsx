@@ -91,18 +91,18 @@ export default function Flavours() {
   useEffect(() => {
     if (!pizzaFlavour) return;
 
-    setflavourId(pizzaFlavour[0].id);
-  }, []);
+    setflavourId(pizzaFlavour[0]?.id);
+  }, [pizzaFlavour]);
 
   return (
     <>
-      <Title tabIndex={0}>Agora escolha o sabor da sua pizza</Title>
+      <Title tabIndex={0}> Agora escolha o sabor da sua pizza</Title>
       <section className={styled.flavourContentWrapper}>
         {flavoursOptions.map(({ id, image, name, description, price }) => (
           <div
-            className={styled.flavourCard}
+            className={id === flavourId ? styled.selected : styled.flavourCard}
             key={id}
-            // selected={id === flavourId ? true : false}
+            
           >
             <img
               className={styled.flavourCardImage}
@@ -112,7 +112,7 @@ export default function Flavours() {
             <p className={styled.flavourCardTitle}>{name}</p>
             <p className={styled.flavourCardDescription}>{description}</p>
             <p className={styled.flavourCardPrice}>
-              {convertToCurrency(price[pizzaSize.slices])}
+              {convertToCurrency(price[pizzaSize[0]?.slices])}
             </p>
             <Button id={id} onClick={handleClick}>
               Selecionar

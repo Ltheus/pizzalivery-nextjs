@@ -26,7 +26,16 @@
 }
 
 .selected {
-    border: 1px solid white;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--small) var(--small) var(--main) var(--small);
+  margin-bottom: var(--large);
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  color: var(--text-main);
 }
 
 .flavourCardImage {
