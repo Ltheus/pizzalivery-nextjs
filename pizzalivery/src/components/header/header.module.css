@@ -1,6 +1,6 @@
 .header {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: var(--small);
+  padding-bottom: var(--small);
   background-color: var(--secondary-dark);
 }
 

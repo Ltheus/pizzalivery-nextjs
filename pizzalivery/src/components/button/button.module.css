@@ -1,9 +1,9 @@
 .button {
   border: 0;
-  padding-top: 16px;
-  padding-right: 24px;
-  padding-bottom: 16px;
-  padding-left: 24px;
+  padding-top: var(--small);
+  padding-right: var(--main);
+  padding-bottom: var(--small);
+  padding-left: var(--main);
   line-height: 1.1;
   border-width: 2px;
   border-style: solid;

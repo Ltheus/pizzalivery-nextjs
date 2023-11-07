@@ -1,8 +1,8 @@
 .footer {
-  padding-top: 32px;
-  padding-bottom: 24px;
+  padding-top: var(--large);
+  padding-bottom: var(--main);
   text-align: center;
-  font-size: 12px;
+  font-size: var(--xsmall);
   background-color: var(--secondary-light);
   color: var(--text-main);
 }
