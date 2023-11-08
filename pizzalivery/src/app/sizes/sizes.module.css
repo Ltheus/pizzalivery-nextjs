@@ -1,0 +1,54 @@
+.sizeContentWrapper {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 50vh;
+}
+
+.radioCard{
+    position: relative;
+  width: 30%;
+}
+
+.radioCard label {
+    display: inherit;
+    width: 100%;
+    padding: var(--xlarge) var(--main);
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--secondary-light);
+    text-align: center;
+    font-size: var(--small);
+    color: var(--text-main);
+    cursor: pointer;
+}
+
+.radioCard label span {
+      display: block;
+      font-size: var(--small);
+      color: var(--text-dark);
+}
+
+.radioCard label span:hover {
+      border-color: var(--text-main);
+}
+
+.radioCard input[type="radio"] {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.radioCard input[type="radio"]:checked ~ label {
+    border-color: var(--text-main);
+}
+
+.sizeActionWrapper {
+    display: flex;  
+    justify-content: space-between;
+    padding: var(--main) 0;
+}

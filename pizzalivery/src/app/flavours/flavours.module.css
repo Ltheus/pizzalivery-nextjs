@@ -1,0 +1,71 @@
+.flavourContentWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 50vh;
+  padding: var(--small) 0;
+}
+
+.flavourCard {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--small) var(--small) var(--main) var(--small);
+  margin-bottom: var(--large);
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--secondary-light);
+  color: var(--text-main);
+}
+
+.flavourCard:hover {
+  border-color: var(--text-main);
+}
+
+.selectedFlavourCard {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--small) var(--small) var(--main) var(--small);
+  margin-bottom: var(--large);
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  color: var(--text-main);
+}
+
+.flavourCardImage {
+  width: 260px;
+}
+
+.flavourCardTitle {
+  padding: var(--small) 0 var(--xsmall) 0;
+  text-align: center;
+  font-size: var(--main);
+  color: var(--text-main);
+}
+
+.flavourCardDescription {
+  min-height: 156px;
+  padding: var(--xsmall) 0;
+  text-align: center;
+  font-size: var(--small);
+  color: var(--text-dark);
+}
+
+.flavourCardPrice {
+  padding: var(--xsmall) 0;
+  font-size: var(--main);
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.flavourActionWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--large) 0;
+}

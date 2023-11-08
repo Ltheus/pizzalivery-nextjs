@@ -1,24 +1,30 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Header } from "@/components/header/Header";
+import { Footer } from "@/components/footer/Footer";
+import { OrderContextProvider } from "./contexts/OrderContext";
+import styled from './layout.module.css'
 import "./globals.css";
 
-const roboto = Roboto({
-  weight: ["100", "300", "700"],
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Pizzalivery",
+  title: "Pizzalivery em nextjs",
 };
 
-export default function RootLayout({
-  children,
-}: {
+interface LayoutProps {
   children: React.ReactNode;
-}) {
+}
+
+export default function RootLayout({children}: LayoutProps) {
   return (
-    <html lang="pt-r">
-      <body className={roboto.className}>{children}</body>
+    <html lang="pt-br">
+      <OrderContextProvider>
+        <body>
+          <Header></Header>
+          <main className={styled.elementMain}>
+            <div className={styled.layoutContainer}>{children}</div>
+          </main>
+          <Footer></Footer>
+        </body>
+      </OrderContextProvider>
     </html>
   );
 }

@@ -1,0 +1,9 @@
+.elementMain{
+    min-height: calc(100vh - 168px);
+    background-color: var(--secondary-main);
+}
+
+.layoutContainer{
+    margin: 0 auto;
+  width: 80%;
+}

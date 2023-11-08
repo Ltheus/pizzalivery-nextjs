@@ -1,0 +1,13 @@
+.footer {
+  padding-top: var(--large);
+  padding-bottom: var(--main);
+  text-align: center;
+  font-size: var(--xsmall);
+  background-color: var(--secondary-light);
+  color: var(--text-main);
+}
+
+.footerDiv {
+  margin: 0 auto;
+  width: 80%;
+}

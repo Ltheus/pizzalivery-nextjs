@@ -1,0 +1,18 @@
+.logoDiv {
+  display: flex;
+  align-items: center;
+}
+
+.logoDiv:hover{
+  cursor: pointer;
+}
+
+.logoIcon {
+  transform: rotate(-40deg);
+}
+
+.logoText {
+  font-size: var(--large);
+  font-weight: bold;
+  color: var(--common-light);
+}
