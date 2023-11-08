@@ -100,20 +100,25 @@ export default function Flavours() {
       <section className={styled.flavourContentWrapper}>
         {flavoursOptions.map(({ id, image, name, description, price }) => (
           <div
-            className={id === flavourId ? styled.selected : styled.flavourCard}
+            className={
+              id === flavourId ? styled.selectedFlavourCard : styled.flavourCard
+            }
             key={id}
-            
           >
-            <img
+            {/* <img
               className={styled.flavourCardImage}
               src={image.toString()}
               alt={name}
-            />
+            /> */}
             <p className={styled.flavourCardTitle}>{name}</p>
             <p className={styled.flavourCardDescription}>{description}</p>
-            <p className={styled.flavourCardPrice}>
-              {convertToCurrency(price[pizzaSize[0]?.slices])}
-            </p>
+
+            {pizzaSize && pizzaSize[0] && (
+              <p className={styled.flavourCardPrice}>
+                {convertToCurrency(price[pizzaSize[0]?.slices])}
+              </p>
+            )}
+
             <Button id={id} onClick={handleClick}>
               Selecionar
             </Button>
