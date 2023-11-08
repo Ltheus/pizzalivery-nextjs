@@ -1,23 +1,44 @@
 .checkoutItem{
+  padding: var(--large) 0;
+  border-bottom: 1px solid var(--text-main);
+  margin-bottom: var(--large);
+}
+
+.checkoutItem h2 {
+    font-size: var(--main);
+    color: var(--text-main);
+
+}
+
+.checkoutItem p {
+    color: var(--text-dark);
 
 }
 
 .checkoutItemFlex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-}
-
-.paymentMethodGroup{
-    
 }
 
 .paymentMethodGroup label{
+    display: block;
+    margin-bottom: var(--xsmall);
+    color: var(--text-dark);
 
 }
 
 .paymentMethodGroup select{
-
+    padding: var(--small) var(--large);
+    border: 1px solid var(--text-dark);
+    font-size: var(--small);
+    color: var(--text-dark);
 }
 
 .checkoutAction{
-    
+  padding: var(--large) 0;
+  display: flex;
+  justify-content: flex-end;
+
 }
