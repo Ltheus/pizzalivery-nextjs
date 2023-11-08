@@ -9,11 +9,6 @@ import styled from "./flavours.module.css";
 import { Title } from "@/components/title/Title";
 import { Button } from "@/components/button/Button";
 
-import Mussarela from "../../assets/pizzaFlavours/mucarela.png";
-import ChickenWithCheese from "../../assets/pizzaFlavours/frango-catupiry.png";
-import Margherita from "../../assets/pizzaFlavours/margherita.png";
-import Lusa from "../../assets/pizzaFlavours/portuguesa.png";
-
 export default function Flavours() {
   const router = useRouter();
   const { pizzaSize, pizzaFlavour, setPizzaFlavour } = useContext(OrderContext);
@@ -70,17 +65,14 @@ export default function Flavours() {
             }
             key={id}
           >
-            <img
-              className={styled.flavourCardImage}
-              src={image}
-              alt={name}
-            />
+            <img className={styled.flavourCardImage} src={image} alt={name} />
             <p className={styled.flavourCardTitle}>{name}</p>
             <p className={styled.flavourCardDescription}>{description}</p>
-            <p className={styled.flavourCardPrice}>
-              {convertToCurrency(price[pizzaSize[0]?.slices])}
-            </p>
-
+            {pizzaSize && pizzaSize[0] ? (
+              <p className={styled.flavourCardPrice}>
+                {convertToCurrency(price[pizzaSize[0]?.slices])}
+              </p>
+            ) : (router.push('/sizes'))}
             <Button id={id} onClick={handleClick}>
               Selecionar
             </Button>
