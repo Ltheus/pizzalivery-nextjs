@@ -113,11 +113,11 @@ export default function Flavours() {
             <p className={styled.flavourCardTitle}>{name}</p>
             <p className={styled.flavourCardDescription}>{description}</p>
 
-            {pizzaSize && pizzaSize[0] && (
+            {pizzaSize && pizzaSize[0] ? (
               <p className={styled.flavourCardPrice}>
                 {convertToCurrency(price[pizzaSize[0]?.slices])}
               </p>
-            )}
+            ) : router.push('/sizes')}
 
             <Button id={id} onClick={handleClick}>
               Selecionar

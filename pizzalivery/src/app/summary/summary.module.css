@@ -1,0 +1,42 @@
+.summaryContentWrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 50vh;
+  padding: var(--small) 0;
+}
+
+.summaryImage{
+  width: 120px;
+  float: left;
+  margin: 0 var(--xsmall) 0 0;
+}
+
+.summaryTitle{
+  margin-bottom: var(--xsmall);
+  font-size: var(--main);
+  color: var(--text-main);
+}
+
+.summaryDescription{
+  margin-bottom: var(--xsmall);
+  font-size: var(--small);
+  color: var(--text-dark);
+}
+
+.summaryPrice{
+  font-size: var(--main);
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.summaryAmount{
+  padding: var(--main);
+  text-align: right;
+}
+
+.summaryActionWrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: var(--large) 0;
+}

@@ -3,6 +3,10 @@
   align-items: center;
 }
 
+.logoDiv:hover{
+  cursor: pointer;
+}
+
 .logoIcon {
   transform: rotate(-40deg);
 }
